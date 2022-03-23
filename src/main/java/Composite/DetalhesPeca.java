@@ -3,8 +3,8 @@ package Composite;
 public class DetalhesPeca extends Pecas{
     private Float valorPeca;
 
-    public DetalhesPeca(String descricao, Float valorPeca) {
-        super(descricao);
+    public DetalhesPeca(String nomePeca, Float valorPeca) {
+        super(nomePeca);
         this.valorPeca = valorPeca;
     }
 
@@ -17,6 +17,6 @@ public class DetalhesPeca extends Pecas{
     }
 
     public String getPeca() {
-        return "Detalhes: " + this.getDescricao() + " - valor: " + this.valorPeca + "\n";
+        return "Detalhes: " + this.getNome() + " - valor: " + this.valorPeca + "\n";
     }
 }

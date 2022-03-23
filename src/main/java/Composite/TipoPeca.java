@@ -7,8 +7,8 @@ public class TipoPeca extends Pecas{
 
     private List<Pecas> pecasList;
 
-    public TipoPeca(String descricao) {
-        super(descricao);
+    public TipoPeca(String nomeTipo) {
+        super(nomeTipo);
         this.pecasList = new ArrayList<Pecas>();
     }
 
@@ -18,7 +18,7 @@ public class TipoPeca extends Pecas{
 
     public String getPeca() {
         String saida = "";
-        saida = "Tipo: " + this.getDescricao() + "\n";
+        saida = "Tipo: " + this.getNome() + "\n";
         for (Pecas pecas : pecasList) {
             saida += pecas.getPeca();
         }
